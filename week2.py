@@ -33,7 +33,7 @@ def create_bucket(bucket_uri):
 create_bucket(BUCKET_URI)
 
 # Load iris data
-data = pd.read_csv('iris.csv')
+data = pd.read_csv('data/iris.csv')
 
 # Split data
 train, test = train_test_split(data, test_size=0.4, stratify=data['species'], random_state=42)
